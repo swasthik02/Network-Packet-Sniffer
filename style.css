@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h1 {
+    color: #38bdf8;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stats div {
+    background: #334155;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+select, button {
+    padding: 12px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #475569;
+    text-align: center;
+}
+
+th {
+    background: #0369a1;
+}
+
+tr:nth-child(even) {
+    background: #334155;
+}
+
+small {
+    display: block;
+    margin-top: 20px;
+    color: #cbd5e1;
+    text-align: center;
+}

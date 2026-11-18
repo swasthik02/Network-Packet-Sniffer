@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Packet Sniffer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Network Packet Sniffer</h1>
+    <p>Network Traffic Monitoring Dashboard</p>
+
+    <div class="stats">
+        <div>Total Packets <h2 id="total">0</h2></div>
+        <div>TCP Packets <h2 id="tcp">0</h2></div>
+        <div>UDP Packets <h2 id="udp">0</h2></div>
+    </div>
+
+    <h2>Packet Monitor</h2>
+
+    <select id="filter">
+        <option value="ALL">All Packets</option>
+        <option value="TCP">TCP</option>
+        <option value="UDP">UDP</option>
+        <option value="ICMP">ICMP</option>
+    </select>
+
+    <button onclick="startMonitoring()">Start Monitoring</button>
+    <button onclick="stopMonitoring()">Stop Monitoring</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Protocol</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+
+        <tbody id="packetData"></tbody>
+    </table>
+
+    <p id="status">Monitoring stopped</p>
+
+    <small>
+        Educational simulation only. No real network traffic is captured.
+    </small>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
